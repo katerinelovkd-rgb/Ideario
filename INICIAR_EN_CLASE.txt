@@ -1,0 +1,27 @@
+IDEARIO PARA CLASE
+
+Requiere PHP 8.4.1 o superior. Puedes seleccionar PHP 8.5 en Herd.
+
+1. Coloca la carpeta ideario-clase dentro de la carpeta Herd de tu usuario.
+2. Abre ideario-clase con Visual Studio Code.
+3. En la terminal, desde esa carpeta, ejecuta:
+
+   php artisan key:generate
+   php artisan optimize:clear
+   php artisan serve
+
+4. Abre http://127.0.0.1:8000/admin en el navegador.
+5. Entra con tu cuenta y contraseña habituales.
+
+Incluye vendor, los archivos públicos de Filament y la base SQLite del ZIP
+original que compartiste. No necesitas instalar paquetes para el arranque
+si Herd está usando una versión de PHP compatible.
+
+Se integraron las correcciones de Ideas y la policy de Categoría.
+Categoría: admin consulta/crea/edita/elimina; coordinador consulta;
+asistente consulta/edita. Solo admin elimina.
+El botón Eliminar se oculta si hay ideas relacionadas con la categoría.
+
+La base de datos y usuarios corresponden al respaldo original. No se han
+recuperado cambios posteriores que solo estén en tu laptop.
+El archivo .env usa SQLite local y necesita la nueva clave del paso 3.
